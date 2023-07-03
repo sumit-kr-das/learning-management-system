@@ -1,10 +1,14 @@
 import React from 'react'
+// Components
+import Categories from '../../components/common/home/categories/Categories';
+import HeroSlider from '../../components/common/home/heroSlider/HeroSlider';
 
 const HomePage = () => {
   return (
-    <div>
-      <h1>Home</h1>
-    </div>
+    <>
+      <Categories />
+      <HeroSlider />
+    </>
   )
 }
 

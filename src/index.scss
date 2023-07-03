@@ -11,3 +11,14 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+
+a, p {
+	font-family: -apple-system, "Montserrat", sans-serif, BlinkMacSystemFont,
+	"Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+	"Droid Sans", "Helvetica Neue", sans-serif;
+	font-weight: 400;
+    line-height: 1.4;
+    font-size: 1.4rem;
+	font-size: 14px;
+	color: #111111;
+}
