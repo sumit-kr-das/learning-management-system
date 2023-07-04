@@ -1,15 +1,37 @@
 .hero_slider {
 	width: 100%;
-    margin-top: 1rem;
-	.slider_item {
-		width: 100%;
+	margin-top: 10px;
+	position: relative;
+	.slider_btn {
+		position: absolute;
+		z-index: 10;
+		top: 50%;
+		transform: translateY(-50%);
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		font-size: 1.2rem;
+		background-color: #ffffff;
+		width: 30px;
+		height: 30px;
+		border-radius: 8px;
+		cursor: pointer;
+		box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	}
+	.left {
+		left: 1rem;
+	}
+	.right {
+		right: 1rem;
+	}
+	.slider_item {
+		width: 100%;
 		img {
-			height: 340px;
-			width: 1136px;
+			height: 100%;
+			width: 100%;
 			object-fit: cover;
+			border-radius: 8px;
 		}
+
 	}
 }
