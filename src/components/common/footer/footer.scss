@@ -1,0 +1,48 @@
+footer {
+	background-color: #1c1d1f;
+    margin-top: 5rem;
+	.footer_container {
+		padding: 4rem;
+		display: flex;
+		justify-content: space-between;
+		.left_container {
+            width: 40%;
+            .nav_logo {
+                width: 120px;
+            }
+            .app_store {
+                width: 250px;
+            }
+            p {
+                color: #fff;
+                margin: 0.5rem 0;
+            }
+		}
+		.right_container {
+            display: flex;
+            justify-content: space-between;
+			ul {
+                list-style: none;
+				li {
+                    margin-top: 0.5rem;
+					a {
+                        text-decoration: none;
+						color: #969696;
+					}
+				}
+                li:first-child a {
+                    color: #fff;
+                    font-weight: 600;
+                    font-size: 1rem;
+                }
+			}
+            ul:first-child {
+                margin-right: 4rem;
+            }
+		}
+	}
+    .copyright {
+        color: #fff;
+        padding: 1rem 4rem;
+    }
+}

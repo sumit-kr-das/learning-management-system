@@ -1,2 +1,4 @@
-export { default as HomePage } from './Home/HomePage';
-export { default as ErrorPage } from "./Error/ErrorPage";
+export { default as HomePage } from "./home/HomePage";
+export { default as ErrorPage } from "./error/ErrorPage";
+export { default as LoginPage } from "./login/LoginPage";
+export { default as SignUpPage } from "./signup/SignUpPage";

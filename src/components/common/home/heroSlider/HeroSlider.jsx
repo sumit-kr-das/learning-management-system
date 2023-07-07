@@ -4,9 +4,9 @@ import Layout from '../../../layout/Layout';
 // Icons
 import { RiArrowLeftSLine, RiArrowRightSLine } from "react-icons/ri";
 // Images
-import slider1 from '../../../../assets/hero_slider/slider1.avif';
-import slider2 from '../../../../assets/hero_slider/slider2.avif';
-import slider3 from '../../../../assets/hero_slider/slider3.avif';
+import slider3 from '../../../../assets/hero_slider/slider1.avif';
+import slider1 from '../../../../assets/hero_slider/slider2.avif';
+import slider2 from '../../../../assets/hero_slider/slider3.jpg';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
