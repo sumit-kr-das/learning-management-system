@@ -6,6 +6,7 @@ export const courseData = [
 		rating: 4.9,
 		price: 799,
 		totalEnrolled: 2135,
+		
 	},
 	{
 		src: "https://img-c.udemycdn.com/course/240x135/5088684_a587_7.jpg",
