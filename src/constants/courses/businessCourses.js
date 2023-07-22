@@ -531,6 +531,7 @@ export const businessCourses = [
 			},
 		},
 	},
+
 	{
 		price: 1200,
 		discountPrice: 600,

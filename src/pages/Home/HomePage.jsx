@@ -6,7 +6,6 @@ import MyLearning from "../../components/common/home/myLearning/MyLearning";
 import Features from "../../components/common/home/features/Features";
 import CourseCardSlider from "../../components/common/courseCardSlider/CourseCardSlider";
 // Constant Data
-import { courseData } from '../../constants/courseData'
 import { webCourses } from "../../constants/courses/webCourses";
 import { marketingCourses } from "../../constants/courses/marketingCourses";
 import { itCourses } from "../../constants/courses/itCourses";
@@ -20,11 +19,25 @@ const HomePage = () => {
       <HeroSlider />
       <MyLearning />
       {/*<Features />*/}
-      <CourseCardSlider data={webCourses} title="Development Courses" />
-      <CourseCardSlider data={marketingCourses} title="Marketing Courses" />
-      <CourseCardSlider data={itCourses} title="Software & IT Courses" />
-      <CourseCardSlider data={musicCourses} title="Music Courses" />
-      <CourseCardSlider data={personalCourses} title="Personal Development Courses" />
+      <CourseCardSlider
+        data={webCourses}
+        title="Development"
+      />
+      <CourseCardSlider
+        data={marketingCourses}
+        title="Marketing" />
+      <CourseCardSlider
+        data={itCourses}
+        title="IT & Software"
+      />
+      <CourseCardSlider
+        data={musicCourses}
+        title="Music"
+      />
+      <CourseCardSlider
+        data={personalCourses}
+        title="Personal Development"
+      />
     </>
   );
 };

@@ -50,7 +50,7 @@ const CourseCardSlider = ({ data, title }) => {
               {
                 data?.map((item, index) => (
                   <SwiperSlide key={index}>
-                    <Link to={`/course/${item.id}`} className="course_card">
+                    <Link to={`/course/${item.id}?type=${title}`} className="course_card">
                       <div className="course_card_img">
                         <img src={item.image_480x270} alt="cart img" />
                       </div>

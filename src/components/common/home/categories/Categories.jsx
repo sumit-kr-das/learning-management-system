@@ -3,7 +3,8 @@ import React from 'react';
 import './categories.scss';
 
 // Constants
-import { categories } from '../../../../constants/data';
+import { categories } from '../../../../constants/categories';
+import { Link } from 'react-router-dom';
 
 const Categories = () => {
     return (
@@ -11,7 +12,9 @@ const Categories = () => {
             <div className='categories_container'>
                 {
                     categories.map((item, index) => (
-                        <p key={index}>{item.tag}</p>
+                        <Link to={`/category/${item.tag}`} key={index}>
+                            <p>{item.tag}</p>
+                        </Link>
                     ))
                 }
             </div>

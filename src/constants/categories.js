@@ -1,49 +1,42 @@
 export const categories = [
 	{
 		tag: "Development",
-		subtags: [
-			"Mobile Development",
-			"Mobile Development",
-			"Programming Languages",
-			"Game Development",
-			"Database Design & Development",
-			"Software Testing",
-		],
+		id: 1,
 	},
 	{
 		tag: "Business",
-		subtags: [],
+		id: 2,
 	},
 	{
 		tag: "Finance & Accounting",
-		subtags: [],
+		id: 3,
 	},
 	{
 		tag: "IT & Software",
-		subtags: [],
+		id: 4,
 	},
 	{
 		tag: "Office Productivity",
-		subtags: [],
+		id: 5,
 	},
 	{
 		tag: "Personal Development",
-		subtags: [],
+		id: 6,
 	},
 	{
 		tag: "Design",
-		subtags: [],
+		id: 7,
 	},
 	{
 		tag: "Marketing",
-		subtags: [],
+		id: 8,
 	},
 	{
 		tag: "Health & Fitness",
-		subtags: [],
+		id: 9,
 	},
 	{
 		tag: "Music",
-		subtags: [],
+		id: 10,
 	},
 ];
