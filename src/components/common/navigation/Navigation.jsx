@@ -12,6 +12,10 @@ import { AuthContext } from '../../../context/authContent';
 
 const Navigation = () => {
     const {user} = useContext(AuthContext);
+    const logOut = () => {
+		localStorage.removeItem("user");
+		window.location.reload(false);
+	};
     return (
         <nav>
             <div className='left_child'>
@@ -39,19 +43,12 @@ const Navigation = () => {
                 </div>
                 <div className='nav_links'>
                     <Link to="/">
-                        <RiHeart3Line className='nav_icons' />
-                    </Link>
-                </div>
-                <div className='nav_links'>
-                    <Link to="/">
                         <RiShoppingCartLine className='nav_icons' />
                     </Link>
                 </div>
-                <div className='nav_links'>
-                    <Link to="/">
-                        <RiNotification2Line className='nav_icons' />
-                    </Link>
-                </div>
+                {
+                    user && <button onClick={logOut}>Logout</button> 
+                }
                 {
                     user ?
                         <div className='nav_links'>
