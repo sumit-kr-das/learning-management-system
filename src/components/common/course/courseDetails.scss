@@ -1,0 +1,21 @@
+.course_details_container {
+	.course_details_header {
+		padding: 2rem;
+		background-color: #1c1d1f;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 1rem;
+		p,
+		h1 {
+			color: #fff !important;
+			margin-bottom: 1rem;
+		}
+
+		img {
+			border: 1px solid #000;
+		}
+	}
+	.course_details_section {
+	}
+}

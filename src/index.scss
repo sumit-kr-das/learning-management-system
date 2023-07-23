@@ -12,12 +12,13 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-a, p {
+a,
+p {
 	font-family: -apple-system, "Montserrat", sans-serif, BlinkMacSystemFont,
-	"Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
-	"Droid Sans", "Helvetica Neue", sans-serif;
+		"Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+		"Droid Sans", "Helvetica Neue", sans-serif;
 	font-weight: 400;
-    line-height: 1.4;
+	line-height: 1.4;
 	font-size: 14px;
 	color: #111111;
 }
@@ -26,9 +27,27 @@ a {
 	text-decoration: none;
 }
 
-h1, h2 {
+h1,
+h2 {
 	font-family: "Montserrat", sans-serif;
 	font-weight: 600;
-    line-height: 1.4;
+	line-height: 1.4;
 	color: #111111;
+}
+
+// pricing
+.pricing_section_main {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	.course_rating {
+		font-weight: 600;
+	}
+	.star_icon {
+		color: #b4690e;
+	}
+	.div {
+		display: flex;
+		align-items: center;
+	}
 }
