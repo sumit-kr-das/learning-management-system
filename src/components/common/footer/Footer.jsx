@@ -33,7 +33,7 @@ const Footer = () => {
                     </ul>
                 </div>
             </div>
-            <p className='copyright'>© 2023 Sorting Hat Technologies Pvt Ltd</p>
+            <p className='copyright'>© 2023 Sumit Kumar Das | CSI</p>
         </footer>
     )
 }

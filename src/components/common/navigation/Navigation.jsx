@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 // React avatar
 import Avatar from 'react-avatar';
 // Icons
@@ -8,8 +8,10 @@ import logo from '../../../assets/logo-udemy.svg'
 // Stylesheet
 import './navigation.scss';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../../context/authContent';
 
 const Navigation = () => {
+    const {user} = useContext(AuthContext);
     return (
         <nav>
             <div className='left_child'>
@@ -50,11 +52,19 @@ const Navigation = () => {
                         <RiNotification2Line className='nav_icons' />
                     </Link>
                 </div>
-                <div className='nav_links'>
-                    <Link to="/">
-                        <Avatar name="Wim Mostmans" size="30" round={true} />
-                    </Link>
-                </div>
+                {
+                    user ?
+                        <div className='nav_links'>
+                            <Link to="/">
+                                <Avatar name="Wim Mostmans" size="30" round={true} />
+                            </Link>
+                        </div>
+                        :
+                        <Link to={"/login"}>
+                            <button>Login</button>
+                        </Link>
+                }
+
             </div>
         </nav>
     )
